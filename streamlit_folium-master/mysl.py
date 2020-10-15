@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[16]:
-
-
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -30,7 +24,6 @@ elif select_date=='2019/01/05':
 
 # import data
 DATE_TIME = "timestart"
-st.cache
 def load_data(nrows):
     data = pd.read_csv(DATA_URL, nrows=nrows)
     lowercase = lambda x: str(x).lower()
